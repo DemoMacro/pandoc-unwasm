@@ -1,0 +1,8 @@
+{
+  "name": "pandoc-unwasm-examples",
+  "description": "Examples for pandoc-unwasm",
+  "scripts": {},
+  "dependencies": {
+    "pandoc-unwasm": "workspace:*"
+  }
+}

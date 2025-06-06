@@ -1,0 +1,78 @@
+{
+  "name": "pandoc-unwasm",
+  "version": "0.0.0",
+  "description": "Universal Pandoc document converter powered by WebAssembly for all JavaScript runtimes",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "imports": {
+    "#pandoc.wasm": "./assets/bin/pandoc.wasm"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "prepack": "pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemoMacro/pandoc-unwasm.git"
+  },
+  "keywords": [
+    "pandoc",
+    "webassembly",
+    "wasm",
+    "document-conversion",
+    "markdown",
+    "html",
+    "latex",
+    "pdf",
+    "docx",
+    "epub",
+    "universal",
+    "cross-platform",
+    "cross-runtime",
+    "browser",
+    "nodejs",
+    "bun",
+    "deno",
+    "cloudflare-workers",
+    "vercel-edge",
+    "netlify-edge",
+    "edge-functions",
+    "serverless",
+    "client-side",
+    "typescript",
+    "pandoc-wasm",
+    "unwasm",
+    "document-processor",
+    "markup-converter",
+    "academic-writing",
+    "citations",
+    "bibliography",
+    "presentations",
+    "slides",
+    "reveal.js",
+    "beamer"
+  ],
+  "author": {
+    "name": "Demo Macro",
+    "email": "abc@imst.xyz",
+    "url": "https://imst.xyz/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemoMacro/pandoc-unwasm/issues"
+  },
+  "homepage": "https://github.com/DemoMacro/pandoc-unwasm#readme"
+}
