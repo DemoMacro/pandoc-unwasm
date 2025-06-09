@@ -8,5 +8,14 @@ export default defineConfig({
     all: true,
   },
   minify: true,
-  plugins: [unwasm({})],
+  plugins: [
+    unwasm({
+      esmImport: true,
+      lazy: true,
+    }),
+  ],
+  outputOptions: {
+    sourcemap: false,
+    exports: "named",
+  },
 });

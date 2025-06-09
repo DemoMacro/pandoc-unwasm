@@ -7,14 +7,15 @@
     ".": {
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./*": "./*"
   },
   "imports": {
     "#pandoc.wasm": "./assets/bin/pandoc.wasm"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.cts",
   "files": [
     "dist",
     "assets"
@@ -74,5 +75,8 @@
   "bugs": {
     "url": "https://github.com/DemoMacro/pandoc-unwasm/issues"
   },
-  "homepage": "https://github.com/DemoMacro/pandoc-unwasm#readme"
+  "homepage": "https://github.com/DemoMacro/pandoc-unwasm#readme",
+  "dependencies": {
+    "@bjorn3/browser_wasi_shim": "0.4.1"
+  }
 }
